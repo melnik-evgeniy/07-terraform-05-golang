@@ -68,4 +68,21 @@ func main() {
 	fmt.Printf("The smallest number in the list: %v\n", y)
 }
 ```
-
+3. Напишите программу, которая выводит числа от 1 до 100, которые делятся на 3. То есть `(3, 6, 9, …)`.
+![](https://github.com/melnik-evgeniy/07-terraform-05-golang/blob/b849b9384a046ecfe96a09f766354fda4ef94d02/4.jpg?raw=true)   
+```bash
+package main
+import "fmt"
+func FilterList ()(devidedWithNoReminder []int) {
+	for i := 1;  i <= 100; i ++ {
+		if	i % 3 == 0 { 
+			devidedWithNoReminder = append(devidedWithNoReminder, i)
+		}
+	}	
+	return
+}
+func main() {
+	toPrint := FilterList()
+	fmt.Printf("Numbers from 1 to 100 that are divided by 3 without a remainder: %v\n", toPrint)
+}
+```
