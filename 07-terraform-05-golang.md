@@ -50,7 +50,7 @@ func main() {
     ```
     x := []int{48,96,86,68,57,82,63,70,37,34,83,27,19,97,9,17,}
     ```
-![](?raw=true)   
+![](https://github.com/melnik-evgeniy/07-terraform-05-golang/blob/9c58061fef4a14f43f1dab72c4b51ea927e1703c/3.jpg?raw=true)   
 ```bash
 package main
 
@@ -68,3 +68,4 @@ func main() {
 	fmt.Printf("The smallest number in the list: %v\n", y)
 }
 ```
+
