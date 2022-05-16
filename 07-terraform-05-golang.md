@@ -25,7 +25,7 @@ go version
 1. Напишите программу для перевода метров в футы (1 фут = 0.3048 метр). Можно запросить исходные данные 
 у пользователя, а можно статически задать в коде.
     Для взаимодействия с пользователем можно использовать функцию `Scanf`:
-![](?raw=true)
+![](https://github.com/melnik-evgeniy/07-terraform-05-golang/blob/e231cc7d519e1f13f13246c646abce30432e6b94/2.jpg?raw=true)
 ```bash
 package main
 
@@ -44,5 +44,27 @@ func main() {
     output := MtoF(input)
 
     fmt.Printf("%v meters, feets - %v\n", input, output)
+}
+```
+2. Напишите программу, которая найдет наименьший элемент в любом заданном списке, например:
+    ```
+    x := []int{48,96,86,68,57,82,63,70,37,34,83,27,19,97,9,17,}
+    ```
+![](?raw=true)   
+```bash
+package main
+
+import "fmt"
+import "sort"
+
+func GetMin (toSort []int)(minNum int) {
+	sort.Ints(toSort)
+	minNum = toSort[0]
+	return
+}
+func main() {
+	x := []int{48,96,86,68,57,82,63,70,37,34,83,27,19,97,9,17,}
+	y := GetMin(x)
+	fmt.Printf("The smallest number in the list: %v\n", y)
 }
 ```
